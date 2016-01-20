@@ -4,6 +4,7 @@ body{
 	font-size:15px;
 	background-color: #E0E0E0;
 	font-family: "Gibson";
+	background-image: url("resources/background.jpg");
 }
 
 div.wrapper {
@@ -36,7 +37,7 @@ aside {
 header h1 {
 	color: #aaa;
 	font-family: "Arial";
-	background-color: #000000 ;
+	background-color: #00001a ;
 	font-size: 50px;
 	margin: 0;
 	padding: 20px;
