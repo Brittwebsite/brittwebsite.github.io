@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-size:15px;
-	background-color: #E0E0E0;
+	background-color:#000000;
 	font-family: "Gibson";
 	background-image: url("resources/background.jpg");
 }
@@ -37,7 +37,6 @@ aside {
 header h1 {
 	color: #aaa;
 	font-family: "Arial";
-	background-color: #000000 ;
 	font-size: 50px;
 	margin: 0;
 	padding: 20px;
@@ -51,6 +50,7 @@ header h6 {
 }
 nav {
 	background-color: #333;
+	box-shadow:5px 5px 5px #01111;
 	margin: 0;
 	overflow: hidden;
 }
