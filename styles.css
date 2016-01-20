@@ -8,11 +8,8 @@ body{
 }
 
 div.wrapper {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 90%;
-	background-color: #111;
-	border-color: #666;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 div.main {
@@ -29,7 +26,7 @@ div.left {
 	background-color: 	#B0B0B0;
 	margin: 0px 10px 0px 0px;
 	float: left;
-	width: 25%;
+	width: 22%;
 	border-radius: 0px 0px 25px 25px;
 	padding: 1em;
 	font-family: "Arial";
@@ -49,7 +46,7 @@ aside {
 	background-color: 	#B0B0B0;
 	margin: margin: 0px 0px 0px 10px;
 	float: left;
-	width: 25%;
+	width: 22%;
 	border-radius: 0px 0px 25px 25px;
 	padding: 1em;
 }
@@ -113,3 +110,11 @@ footer {
 	height: 70px;
 	width: 100%;
 }
+
+form{
+	display:inline-block;
+	width: 300px;
+	margin: 18px 10px 10px 10px;
+	float: right;
+}
+
