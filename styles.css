@@ -19,7 +19,17 @@ div.main {
 	background-color: 	#B0B0B0;
 	margin: 0px 10px 0px 0px;
 	float: left;
-	width: 63%;
+	width: 43%;
+	border-radius: 0px 0px 25px 25px;
+	padding: 1em;
+	font-family: "Arial";
+}
+
+div.left {
+	background-color: 	#B0B0B0;
+	margin: 0px 10px 0px 0px;
+	float: left;
+	width: 25%;
 	border-radius: 0px 0px 25px 25px;
 	padding: 1em;
 	font-family: "Arial";
