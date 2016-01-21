@@ -22,6 +22,9 @@ div.main {
 	border-radius: 0px 0px 25px 25px;
 	padding: 1em;
 	font-family: "Arial";
+	-webkit-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
 }
 
 aside {
@@ -32,6 +35,9 @@ aside {
 	border-radius: 0px 0px 25px 25px;
 	padding: 1em;
 	font-family: "Arial";
+	-webkit-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
 }
 
 div.center {
@@ -47,6 +53,11 @@ div.center h1 {
 		text-align: center;
 }
 
+header {
+	-webkit-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+}
 header h1 {
 	color: #aaa;
 	background-color: #000000;
