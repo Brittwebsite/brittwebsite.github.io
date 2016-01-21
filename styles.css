@@ -4,12 +4,13 @@ body{
 	font-size:15px;
 	background-color:#000000;
 	background-image: url("resources/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #wrapper {
 	width:1240px;
 	margin: 0 auto;
-	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 }
 
@@ -35,12 +36,15 @@ aside {
 
 div.center {
 	background-color: 	#B0B0B0;
-	margin: 0px 10px 0px 0px;
-	float: left;
-	width: 90%;
+	margin: 0 auto;
+	width: 1240px;
 	border-radius: 0px 0px 25px 25px;
-	padding: 1em;
+	padding: 1em 0;
 	font-family: "Arial";
+}
+
+div.center h1 {
+		text-align: center;
 }
 
 header h1 {
