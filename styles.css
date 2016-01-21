@@ -15,7 +15,7 @@ body{
 }
 
 div.main {
-	background-color: 	#B0B0B0;
+	background-color: #b8b8b8;
 	margin: 0px 0px 0px 0px;
 	float: right;
 	width: 840px;
@@ -28,7 +28,7 @@ div.main {
 }
 
 aside {
-	background-color: 	#B0B0B0;
+	background-color: #b8b8b8;
 	margin: 0px 10px 0px 0px;
 	float: left;
 	width: 320px;
