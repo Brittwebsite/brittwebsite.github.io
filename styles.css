@@ -61,7 +61,7 @@ nav > ul > li > a {
 a:hover {
 	background-color: #6E6E6E;
 	color:#FF9900;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 0px 0px;
 }
 
 #bodywrapper {
