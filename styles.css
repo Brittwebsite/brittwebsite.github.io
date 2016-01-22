@@ -24,11 +24,11 @@ header {
 }
 header h1 {
 	color: #FF5A09;
-	font-size: 46px;
+	font-size: 53px;
 	margin: 0;
-	padding: 20px 20px 15px 20px;
+	padding: 18px 20px 15px 40px;
 	float: left;
-	font-family: ubuntu;
+	font-family: Raleway;
 }
 
 h1 {
@@ -64,7 +64,7 @@ nav > ul > li > a {
 	line-height: 3em;
 	padding: .3em .5em .3em .5em;
 	text-decoration: none;
-	font-family: "Arial";
+	font-family: "roboto";
 	font-size: 20px;
 }
 
