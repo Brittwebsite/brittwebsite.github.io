@@ -113,10 +113,11 @@ div.main {
 }
 
 aside {
-	margin: 0px 10px 0px 0px;
+	margin:0px;
 	float: left;
 	width: 200px;
-	padding: 1em;
+	padding:10px;
+	padding-top:5px;
 	color: #FF5A09;
 }
 
