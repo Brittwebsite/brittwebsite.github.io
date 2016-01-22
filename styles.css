@@ -7,6 +7,10 @@ body{
     background-attachment: fixed;
 }
 
+p {
+	font-family: roboto;
+}
+
 #headerwrapper {
 	width:1260px;
 	margin: 0 auto;
@@ -29,6 +33,12 @@ header h1 {
 
 h1 {
 	color: #FF9900;
+	font-family: roboto;
+}
+
+h2 {
+	color:#FF9900;
+	font-family: roboto;
 }
 nav {
 	padding-top: 26px;
@@ -58,11 +68,29 @@ nav > ul > li > a {
 	font-size: 20px;
 }
 
-a:hover {
+nav > ul> li > a:hover {
 	background-color: #6E6E6E;
 	color:#FF9900;
 	border-radius: 5px 5px 0px 0px;
 }
+
+aside ul li{
+	display: block;
+}
+
+aside > ul > li > a{
+	text-decoration: none;
+	color: #FF5A09;
+	font-family: roboto;
+}
+
+aside > ul> li > a:hover {
+	background-color: #6E6E6E;
+	color:#FF9900;
+	border-radius: 5px 5px 5px 5px;
+	padding: 2px;
+}
+
 
 #bodywrapper {
 	width:1080px;
@@ -87,7 +115,7 @@ div.main {
 aside {
 	margin: 0px 10px 0px 0px;
 	float: left;
-	width: 150px;
+	width: 200px;
 	padding: 1em;
 	color: #FF5A09;
 }
@@ -111,5 +139,6 @@ footer {
 	padding-bottom: 0px;
 	height: 70px;
 	width: 100%;
+	font-family: roboto;
 }
 
