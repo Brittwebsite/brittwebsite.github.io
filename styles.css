@@ -8,26 +8,29 @@ body{
 }
 
 #headerwrapper {
-	width:1340px;
+	width:1260px;
 	margin: 0 auto;
 }
 
 header {
-	background-color: black;
+	background-image: url("resources/header.png");
 	overflow:auto;
-	border-radius: 0px 0px 25px 25px;	
+	border-radius: 0px 0px 10px 10px;
+	box-shadow:5px 5px 5px #01111;
 }
 header h1 {
 	color: #FF5A09;
-	font-family: "Arial";
-	font-size: 50px;
+	font-size: 46px;
 	margin: 0;
 	padding: 20px 20px 15px 20px;
 	float: left;
+	font-family: ubuntu;
 }
 
+h1 {
+	color: #FF9900;
+}
 nav {
-	box-shadow:5px 5px 5px #01111;
 	padding-top: 26px;
 	margin: 0;
 	overflow: hidden;
@@ -62,41 +65,37 @@ a:hover {
 }
 
 #bodywrapper {
-	width:1240px;
+	width:1080px;
 	margin: 0 auto;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	overflow: auto;
 }
 
 div.main {
-	background-color: #b8b8b8;
-	margin: 0px 0px 0px 0px;
-	float: right;
-	width: 840px;
-	border-radius: 0px 0px 25px 25px;
+	margin: 0px;
+	float: left;
+	width: 740px;
 	padding: 1em;
-	font-family: "Arial";
-	-webkit-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+	background-image: url("resources/body.png");
+	-webkit-box-shadow: 10px 10px 31px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 31px -10px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 31px -10px rgba(0,0,0,0.75);
+	border-radius: 0px 0px 5px 0px;
 }
 
 aside {
-	background-color: #b8b8b8;
 	margin: 0px 10px 0px 0px;
 	float: left;
-	width: 320px;
-	border-radius: 0px 0px 25px 25px;
+	width: 150px;
 	padding: 1em;
-	font-family: "Arial";
-	-webkit-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 36px -8px rgba(0,0,0,0.75);
+	color: #FF5A09;
 }
 
 div.center {
-	background-color: 	#B0B0B0;
+	background-color: #B0B0B0;
 	margin: 0 auto;
-	width: 1240px;
-	border-radius: 0px 0px 25px 25px;
+	width: 1080px;
 	padding: 1em 0;
 	font-family: "Arial";
 }
@@ -105,15 +104,11 @@ div.center h1 {
 		text-align: center;
 }
 
-p{
-	font-size: 15px;
-	font-family: "Arial";
-}
-
 footer {
-	position: fixed;
 	bottom: 0;
 	left: 0;
+	padding-left: 30px;
+	padding-bottom: 0px;
 	height: 70px;
 	width: 100%;
 }
