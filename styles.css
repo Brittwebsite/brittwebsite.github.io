@@ -40,6 +40,11 @@ h2 {
 	color:#FF9900;
 	font-family: roboto;
 }
+
+section h2 {
+	clear:both;
+	padding-top: 10px;
+}
 nav {
 	padding-top: 26px;
 	margin: 0;
@@ -143,3 +148,36 @@ footer {
 	font-family: roboto;
 }
 
+
+figcaption {
+	width: 50%;
+	font-size: .7em;
+	font-family: roboto;
+}
+
+
+figure.leftFig {
+	float: left;
+	margin: 0%;
+	width: 49%;
+	padding-right: 10px;
+}
+
+figure.rightFig {
+	float: right;
+	margin: 0%;
+	width: 49%;
+}
+
+figure.leftFig > img {
+	width: 100%;
+}
+
+figure.rightFig > img {
+	width: 100%;
+}
+figcaption > a {
+	text-decoration: none;
+	font-family: roboto;
+	color: black;
+}
