@@ -1,0 +1,707 @@
+* {
+    box-sizing: border-box;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*****All above is for col ******/
+body {
+	font-family: "roboto";
+}
+@media screen and (min-width: 1024px) {
+  /****Header + nav ****/
+  
+  .headerRow {
+    background-color: #333333;
+    box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    margin-bottom: 1em;
+	width: 100%;
+  }
+  
+  header h1 {
+    color: #FF5A09;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+  }
+  
+  nav {
+    background-color: #333333;
+    padding: 0%;
+    margin: 0%;
+    }
+    
+  nav ul {
+    list-style-type: none;
+    margin: auto;
+    background-color: #333333;
+    padding: 0px;
+    float: right;
+    }
+    
+  nav ul li {
+    margin: 0;
+    margin-top: .6em;
+    display: inline-block;
+    padding-left: .4em;
+    padding-right: .4em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-left: thin solid #d9411e;
+    }
+    
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1.15em;
+    color: #d9411e;
+    display: block;
+    font-family: "roboto";
+    }
+    
+  nav ul li a:hover{
+    color: white;
+    }
+  
+  nav ul li a#active {
+    color: white;
+  }
+  .BetweenNavAndRest {
+    padding: .4em;
+  }
+
+  /****** main stuff ****/
+  .main h2 {
+    color:#FF9900;
+    font-family: roboto;
+    font-size: 1.9em;
+    padding: 0;
+    padding-top: .2em;
+    margin: 0;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  /**** Photos ****/
+  figure.left {
+    display: inline-block;
+    float: left;
+    max-width: 50%;
+    padding: .5em;
+  }
+  
+  figure.right {
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+    padding: .5em;
+  }
+  
+  figure img {
+    vertical-align: top;
+    width: 100%;
+  }
+  figure figcaption {
+    text-align: center;
+    font-size: .7em;
+  }
+  
+  /****** Aside ****/
+  aside {
+    border-right: thin solid gray;
+    padding: 0;
+  }
+  
+  aside div.sideSection h2 {
+    text-align: right;
+    color:#FF9900;
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside div.sideSection ul li{
+    display: block;
+      text-align: right;
+  }
+  
+  aside > div.sideSection > ul > li > a{
+    text-decoration: none;
+    color: #FF5A09;
+    font-family: roboto;
+    text-align: right;
+  }
+  
+  aside > div.sideSection > ul> li > a:hover {
+    color:#FF9900;
+    padding: .2em;;
+  }
+  /**** Footer ***/
+  footer {
+    font-size: .7em;
+    font-family: roboto;
+    background-color: #333333;
+    color: #FF5A09;
+    margin-top: 1em;
+    -webkit-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /****Header + nav ****/
+  
+  .headerRow {
+    background-color: #333333;
+    box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    margin-bottom: 1em;
+  }
+  
+  .title {
+    width: 20%;
+  }
+  
+  header h1 {
+    color: #FF5A09;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+  }
+  
+  nav.navBar {
+    background-color: #333333;
+    padding-top: 2em;
+    margin: auto;
+    width: 80%;
+    }
+    
+  nav ul {
+    list-style-type: none;
+    margin: auto;
+    background-color: #333333;
+    padding: 0px;
+    float: right;
+    }
+    
+  nav ul li {
+    margin: 0;
+    margin-top: .6em;
+    display: inline-block;
+    padding-left: .4em;
+    padding-right: .4em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-left: thin solid #d9411e;
+    }
+    
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #d9411e;
+    display: block;
+    font-family: "roboto";
+    }
+    
+  nav ul li a:hover{
+    color: white;
+    }
+  
+  nav ul li a#active {
+    color: white;
+  }
+  .BetweenNavAndRest {
+    padding: .4em;
+  }
+
+  /****** main stuff ****/
+  .main {
+    width:70%;
+    padding-top: 0;
+  }
+  
+  .main h2 {
+    color:#FF9900;
+    font-family: roboto;
+    font-size: 1.9em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .whiteSpaceLeft{
+    display: none;
+  }
+  
+  .whiteSpaceRight {
+    display: none;
+  }
+  /**** Photos ****/
+  figure.left {
+    display: inline-block;
+    float: left;
+    max-width: 50%;
+    padding: .5em;
+  }
+  
+  figure.right {
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+    padding: .5em;
+  }
+  
+  figure img {
+    vertical-align: top;
+    width: 100%;
+  }
+  figure figcaption {
+    text-align: center;
+    font-size: .7em;
+  }
+  
+  /****** Aside ****/
+  aside.sideBar {
+    border-right: thin solid gray;
+    padding: 0;
+    padding-right: .5em;
+    margin: auto;
+    width: 30%;
+    overflow: visible;
+  }
+  
+  aside div.sideSection h2 {
+    text-align: right;
+    color:#FF9900;
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside div.sideSection ul li{
+    display: block;
+      text-align: right;
+  }
+  
+  aside > div.sideSection > ul > li > a{
+    text-decoration: none;
+    color: #FF5A09;
+    font-family: roboto;
+     text-align: right;
+  }
+  
+  aside > div.sideSection > ul> li > a:hover {
+    color:#FF9900;
+    padding: .2em;;
+  }
+  /**** Footer ***/
+  footer {
+    font-size: .7em;
+    font-family: roboto;
+    background-color: #333333;
+    color: #FF5A09;
+    margin-top: 1em;
+    -webkit-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /****Header + nav ****/
+  
+  .headerRow {
+    background-color: #333333;
+    box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    margin-bottom: .5em;
+  }
+  
+  .title {
+    width: 60%;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  
+  header h1 {
+    color: #FF5A09;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+  }
+  
+  nav.navBar {
+    width: 100%;
+  }
+  
+  .mobileButton {
+    color: #FF5A09;
+    float: right;
+    display: block;
+  }
+  
+  .mobileButton:hover{
+    color: white;
+  }
+  
+  nav ul {
+    clear: both;
+    list-style-type: none;
+    margin: auto;
+    background-color: #333333;
+    padding: 0px;
+    }
+    
+  nav ul li {
+    margin: 0;
+    display: inline-block;
+    padding-left: .5em;
+    padding-right: .8em;
+    padding-top: .50;
+    padding-bottom: .5em;
+
+    }
+    
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #d9411e;
+    display: block;
+    font-family: "roboto";
+    }
+    
+  nav ul li a:hover{
+    color: white;
+    }
+  
+  nav ul li a#active {
+    color: white;
+  }
+  
+  .BetweenNavAndRest {
+    padding: .4em;
+  }
+
+  /****** main stuff ****/
+  .main {
+    width:100%;
+    padding-top: 0;
+  }
+  
+  .main h2 {
+    color:#FF9900;
+    font-family: roboto;
+    font-size: 1.9em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .whiteSpaceLeft{
+    display: none;
+  }
+  
+  .whiteSpaceRight {
+    display: none;
+  }
+  /**** Photos ****/
+  figure.left {
+    display: inline-block;
+    float: left;
+    max-width: 100%;
+    padding: .5em;
+  }
+  
+  figure.right {
+    display: inline-block;
+    float: right;
+    max-width: 100%;
+    padding: .5em;
+  }
+  
+  figure img {
+    vertical-align: top;
+    width: 100%;
+  }
+  figure figcaption {
+    text-align: center;
+    font-size: .7em;
+  }
+  
+  /****** Aside ****/
+  aside.sideBar {
+    margin: auto;
+    width: 100%;
+  }
+  
+  aside div.sideSection {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+  
+  aside div.sideSection h2 {
+    color:#FF9900;
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside div.sideSection ul li{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sideBarMenu {
+    display: none;
+  }
+  aside > div.sideSection > ul > li > a{
+    text-decoration: none;
+    color: #FF5A09;
+    font-family: roboto;
+    text-align: left;
+    font-size: 1.15em;
+  }
+  
+  aside > div.sideSection > ul> li > a:hover {
+    color:#FF9900;
+    padding: .1em;
+  }
+  
+  /**** Footer ***/
+  footer {
+    font-size: .7em;
+    font-family: roboto;
+    background-color: #333333;
+    color: #FF5A09;
+    margin-top: 1em;
+    -webkit-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 479px) {
+  /****Header + nav ****/
+  
+  .headerRow {
+    background-color: #333333;
+    box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    margin-bottom: .5em;
+  }
+  
+  .title {
+    width: 100%;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  
+  header h1 {
+    color: #FF5A09;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+  }
+  
+  nav.navBar {
+    width: 100%;
+  }
+  
+  .mobileButton {
+    color: #FF5A09;
+    float: right;
+    display: block;
+  }
+  
+  .mobileButton:hover{
+    color: white;
+  }
+  
+  nav ul {
+    clear: both;
+    list-style-type: none;
+    margin: auto;
+    background-color: #333333;
+    padding: 0px;
+    }
+    
+  nav ul li {
+    margin: 0;
+    display: block;
+    padding-left: .5em;
+    padding-right: .8em;
+    padding-top: .50;
+    padding-bottom: .5em;
+
+    }
+    
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #d9411e;
+    display: block;
+    font-family: "roboto";
+    }
+    
+  nav ul li a:hover{
+    color: white;
+    }
+  
+  nav ul li a#active {
+    color: white;
+  }
+  
+  .BetweenNavAndRest {
+    padding: .4em;
+  }
+
+  /****** main stuff ****/
+  .main {
+    width:100%;
+    padding-top: 0;
+  }
+  
+  .main h2 {
+    color:#FF9900;
+    font-family: roboto;
+    font-size: 1.9em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .whiteSpaceLeft{
+    display: none;
+  }
+  
+  .whiteSpaceRight {
+    display: none;
+  }
+  /**** Photos ****/
+  figure.left {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding: .5em;
+  }
+  
+  figure.right {
+    display: inline-block;
+    float: right;
+    max-width: 100%;
+    padding: .5em;
+  }
+  
+  figure img {
+    vertical-align: top;
+    width: 100%;
+  }
+  figure figcaption {
+    text-align: center;
+    font-size: .7em;
+  }
+  
+  /****** Aside ****/
+  aside.sideBar {
+    margin: auto;
+    width: 100%;
+  }
+  
+  aside div.sideSection {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+  
+  aside div.sideSection h2 {
+    color:#FF9900;
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside div.sideSection ul li{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sideBarMenu {
+    display: none;
+  }
+  aside > div.sideSection > ul > li > a{
+    text-decoration: none;
+    color: #FF5A09;
+    font-family: roboto;
+    text-align: left;
+    font-size: 1.15em;
+  }
+  
+  aside > div.sideSection > ul> li > a:hover {
+    color:#FF9900;
+    padding: .1em;
+  }
+  
+  /**** Footer ***/
+  footer {
+    font-size: .7em;
+    font-family: roboto;
+    background-color: #333333;
+    color: #FF5A09;
+    margin-top: 1em;
+    -webkit-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px -7px 21px -9px rgba(0,0,0,0.75);
+  }
+}
