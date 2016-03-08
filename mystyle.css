@@ -448,14 +448,14 @@ body {
   figure.left {
     display: inline-block;
     float: left;
-    max-width: 100%;
+    max-width: 90%;
     padding: .5em;
   }
   
   figure.right {
     display: inline-block;
     float: left;
-    max-width: 100%;
+    max-width: 90%;
     padding: .5em;
   }
   
@@ -631,14 +631,14 @@ body {
   figure.left {
     display: inline-block;
     float: left;
-    width: 100%;
+    width: 90%;
     padding: .5em;
   }
   
   figure.right {
     display: inline-block;
     float: left;
-    max-width: 100%;
+    max-width: 90%;
     padding: .5em;
   }
   
