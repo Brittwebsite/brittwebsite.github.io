@@ -340,7 +340,7 @@ body {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   /****Header + nav ****/
   
   .headerRow {
@@ -454,7 +454,7 @@ body {
   
   figure.right {
     display: inline-block;
-    float: right;
+    float: left;
     max-width: 100%;
     padding: .5em;
   }
@@ -637,7 +637,7 @@ body {
   
   figure.right {
     display: inline-block;
-    float: right;
+    float: left;
     max-width: 100%;
     padding: .5em;
   }
