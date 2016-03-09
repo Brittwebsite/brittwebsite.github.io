@@ -737,7 +737,7 @@ body {
 
 /****** IPhones *****/
 
-iPhone2G-4S landscape
+/*iPhone2G-4S landscape */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) 
