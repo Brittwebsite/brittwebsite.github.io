@@ -737,28 +737,25 @@ body {
 
 /****** IPhones *****/
 
-/*iPhone2G-4S landscape */
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) 
-and (orientation : landscape) 
-{
-	  /****Header + nav ****/
-  
-  .headerRow {
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	  .headerRow {
     background-color: #333333;
     box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
   
   .title {
-    width: 20%;
-  }
-  
-  .menu_button {
-    display: none;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin: 0;
+    float: left;
+    width: 72%;
   }
   
   header h1 {
@@ -767,56 +764,67 @@ and (orientation : landscape)
     margin: 0;
     padding: 0;
     font-family: Raleway;
+    position: relative;
+    z-index: 1;
   }
   
   nav.navBar {
-    background-color: #333333;
-    padding-top: 2em;
-    margin: auto;
-    width: 80%;
-    }
-    
-  nav ul {
-    list-style-type: none;
-    margin: auto;
-    background-color: #333333;
-    padding: 0px;
     float: right;
-    }
-    
-  nav ul li {
-    margin: 0;
-    margin-top: .6em;
-    display: inline-block;
-    padding-left: .4em;
-    padding-right: .4em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    border-left: thin solid #d9411e;
-    }
-    
-  nav ul li a {
-    text-decoration: none;
-    font-size: 1em;
-    color: #d9411e;
-    display: block;
-    font-family: "roboto";
-    }
-    
-  nav ul li a:hover{
-    color: white;
-    }
-  
-  nav ul li a#active {
-    color: white;
   }
+  
+#navigation {
+    padding: 20px;
+    background-color: #333333;
+    color: #FF9900;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+  
+#navigation ul {
+    display: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#navigation ul.expanded {
+    display: block;
+}
+#navigation li a {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #666;
+    font-size: 1.2em;
+    color: #FF9900;
+    text-decoration: none;
+}
+  
+#navigation li a#active {
+  color: white;
+}
+  
+.menu_button {
+    display: block;
+    text-align: right;
+    color: #FF9900;
+    text-decoration: none;
+    padding-top: 3px;
+}
+.menu_button:hover {
+    color: #58cbdb;
+    text-decoration: none;
+}
+  
   .BetweenNavAndRest {
     padding: .4em;
   }
 
   /****** main stuff ****/
   .main {
-    width:70%;
+    width:100%;
     padding-top: 0;
   }
   
@@ -845,15 +853,18 @@ and (orientation : landscape)
   figure.left {
     display: inline-block;
     float: left;
-    max-width: 50%;
-    padding: .5em;
+    max-width: 100%;
+    padding: 0;
+	margin: 0;
+	padding-right: .5em;
   }
   
   figure.right {
     display: inline-block;
     float: right;
-    max-width: 50%;
-    padding: .5em;
+    max-width: 100%;
+    padding: 0;
+	margin: 0;
   }
   
   figure img {
@@ -867,16 +878,18 @@ and (orientation : landscape)
   
   /****** Aside ****/
   aside.sideBar {
-    border-right: thin solid gray;
-    padding: 0;
-    padding-right: .5em;
     margin: auto;
-    width: 30%;
-    overflow: visible;
+    width: 100%;
+  }
+  
+  aside div.sideSection {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
   }
   
   aside div.sideSection h2 {
-    text-align: right;
     color:#FF9900;
     font-family: roboto;
     margin: 0;
@@ -885,20 +898,26 @@ and (orientation : landscape)
   
   aside div.sideSection ul li{
     display: block;
-      text-align: right;
+    margin: 0;
+    padding: 0;
   }
   
+  .sideBarMenu {
+    display: none;
+  }
   aside > div.sideSection > ul > li > a{
     text-decoration: none;
     color: #FF5A09;
     font-family: roboto;
-     text-align: right;
+    text-align: left;
+    font-size: 1.15em;
   }
   
   aside > div.sideSection > ul> li > a:hover {
     color:#FF9900;
-    padding: .2em;
+    padding: .1em;
   }
+  
   /**** Footer ***/
   footer {
     font-size: .7em;
