@@ -454,14 +454,12 @@ body {
     display: inline-block;
     float: left;
     max-width: 100%;
-    padding: .5em;
   }
   
   figure.right {
     display: inline-block;
     float: right;
     max-width: 100%;
-    padding: .5em;
   }
   
   figure img {
@@ -643,14 +641,12 @@ body {
     display: inline-block;
     float: left;
     width: 100%;
-    padding: .5em;
   }
   
   figure.right {
     display: inline-block;
     float: right;
     max-width: 100%;
-    padding: .5em;
   }
   
   figure img {
