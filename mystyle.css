@@ -363,13 +363,11 @@ body {
   }
   
   .title {
-    width: 60%;
     padding-bottom: 0;
+    padding-right: 0;
     margin: 0;
-  }
-  
-  .menu_button {
-    display: none;
+    float: left;
+    width: 72%;
   }
   
   header h1 {
@@ -378,45 +376,59 @@ body {
     margin: 0;
     padding: 0;
     font-family: Raleway;
+    position: relative;
+    z-index: 1;
   }
   
   nav.navBar {
-    width: 100%;
+    float: right;
   }
   
-  nav ul {
-    clear: both;
-    list-style-type: none;
-    margin: auto;
+#navigation {
+    padding: 20px;
     background-color: #333333;
-    padding: 0px;
-    }
-    
-  nav ul li {
-    margin: 0;
-    display: inline-block;
-    padding-left: .5em;
-    padding-right: .8em;
-    padding-top: .50;
-    padding-bottom: .5em;
-
-    }
-    
-  nav ul li a {
-    text-decoration: none;
-    font-size: 1em;
-    color: #d9411e;
-    display: block;
-    font-family: "roboto";
-    }
-    
-  nav ul li a:hover{
-    color: white;
-    }
+    color: #FF9900;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
   
-  nav ul li a#active {
-    color: white;
-  }
+#navigation ul {
+    display: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#navigation ul.expanded {
+    display: block;
+}
+#navigation li a {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #666;
+    font-size: 1.2em;
+    color: #FF9900;
+    text-decoration: none;
+}
+  
+#navigation li a#active {
+  color: white;
+}
+  
+.menu_button {
+    display: block;
+    text-align: right;
+    color: #FF9900;
+    text-decoration: none;
+    padding-top: 3px;
+}
+.menu_button:hover {
+    color: #58cbdb;
+    text-decoration: none;
+}
   
   .BetweenNavAndRest {
     padding: .4em;
