@@ -6,6 +6,18 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<script>
+		var originalNavClasses;
+
+	function toggleNav() {
+		var elem = document.getElementById('navigation_list');
+		var classes = elem.className;
+		if (originalNavClasses === undefined) {
+			originalNavClasses = classes;
+		}
+		elem.className = /expanded/.test(classes) ? originalNavClasses : originalNavClasses + ' expanded';
+}
+	</script>
 	</head>
 	<body>
     
